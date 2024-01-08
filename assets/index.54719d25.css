@@ -1,0 +1,222 @@
+._pages_1b4lj_1 {
+  display: flex;
+  height: 100%;
+}
+._pages_1b4lj_1 ._serach_1b4lj_5 {
+  flex: 2 0 50px;
+}
+._pages_1b4lj_1 ._resize_1b4lj_8 {
+  min-width: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+._pages_1b4lj_1 ._listHeader_1b4lj_14 {
+  margin-right: 8px;
+  display: flex;
+}
+._pages_1b4lj_1 .arco-tree-node-switcher {
+  width: auto;
+}
+._pages_1b4lj_1 .arco-tree-node-title {
+  padding: 4px 0;
+}
+._pages_1b4lj_1 .arco-collapse-item-content-box {
+  padding: 8px;
+}
+._pages_1b4lj_1 .arco-card-body {
+  padding: 8px;
+}
+._pages_1b4lj_1 .arco-card-meta-footer {
+  margin-top: 0px;
+}
+._pages_1b4lj_1 ._listBody_1b4lj_33 {
+  margin-top: 6px;
+  margin-right: 8px;
+  flex: 2 0 100px;
+  overflow-y: auto;
+}
+._pages_1b4lj_1 ._listBody_1b4lj_33 ._treeItem_1b4lj_39 ._treeItemTitle_1b4lj_39 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  min-width: 100px;
+  overflow: hidden;
+  user-select: none;
+}
+._pages_1b4lj_1 ._listBody_1b4lj_33 ._treeItem_1b4lj_39 ._treeItemTitle_1b4lj_39 ._titleText_1b4lj_48 {
+  margin-left: 4px;
+}
+._pages_1b4lj_1 ._listBody_1b4lj_33 ._treeItem_1b4lj_39 .arco-tree-node {
+  align-items: center;
+}
+._pages_1b4lj_1 ._listBody_1b4lj_33 ._treeItem_1b4lj_39 .arco-btn {
+  opacity: 0.1;
+}
+._pages_1b4lj_1 ._listBody_1b4lj_33:hover {
+  background-color: var(--color-bg-1);
+}
+._pages_1b4lj_1 ._listBody_1b4lj_33:hover .arco-btn {
+  opacity: 1;
+}
+._pages_1b4lj_1 ._body_1b4lj_63 {
+  width: 500px;
+  flex: 2 0 100px;
+  margin-left: 8px;
+  position: relative;
+}
+._pages_1b4lj_1 ._body_1b4lj_63 ._bodyList_1b4lj_69 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+._container_1b4lj_78 {
+  position: relative;
+  padding-bottom: 45%;
+}
+._container_1b4lj_78 ._content_1b4lj_82 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  transform: translate(0);
+}
+._container_1b4lj_78 ._content_1b4lj_82 > div {
+  pointer-events: none;
+}
+._container_1b4lj_78 ._content_1b4lj_82 .page-container {
+  width: 100%;
+  height: 100%;
+}
+._container_1b4lj_78 ._contentScale_1b4lj_98 {
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+}
+/*********** font ***********/
+/*********** red ***********/
+/*********** orangered ***********/
+/*********** orange ***********/
+/*********** gold ***********/
+/*********** yellow ***********/
+/*********** lime ***********/
+/*********** green ***********/
+/*********** cyan ***********/
+/*********** blue ***********/
+/*********** arcoblue ***********/
+/*********** purple ***********/
+/*********** pinkpurple ***********/
+/*********** magenta ***********/
+/*********** gray ***********/
+/*********** dark ***********/
+/*********** primary ***********/
+/*********** success ***********/
+/*********** danger ***********/
+/*********** warning ***********/
+/*********** link ***********/
+/*********** border ***********/
+/*********** shadow ***********/
+/*********** size ***********/
+/*********** spacing ***********/
+/*********** color ***********/
+/*********** shadow1 ***********/
+/*********** shadow2 ***********/
+/*********** shadow3 ***********/
+/*********** opacity ***********/
+/*********** radius ***********/
+/*********** mask ***********/
+/*********** icon ***********/
+/*********** prefix ***********/
+/*********** arco ***********/
+/*********** code ***********/
+/*********** transition ***********/
+/*********** z ***********/
+/*********** line ***********/
+/*********** popup ***********/
+/*********** picker ***********/
+/*********** affix ***********/
+/*********** alert ***********/
+/*********** anchor ***********/
+/*********** auto ***********/
+/*********** select ***********/
+/*********** avatar ***********/
+/*********** backtop ***********/
+/*********** badge ***********/
+/*********** breadcrumb ***********/
+/*********** btn ***********/
+/*********** calendar ***********/
+/*********** card ***********/
+/*********** carousel ***********/
+/*********** cascader ***********/
+/*********** input ***********/
+/*********** checkbox ***********/
+/*********** collapse ***********/
+/*********** comment ***********/
+/*********** timepicker ***********/
+/*********** date ***********/
+/*********** time ***********/
+/*********** datepicker ***********/
+/*********** month ***********/
+/*********** quarter ***********/
+/*********** year ***********/
+/*********** week ***********/
+/*********** range ***********/
+/*********** descriptions ***********/
+/*********** divider ***********/
+/*********** drawer ***********/
+/*********** dropdown ***********/
+/*********** empty ***********/
+/*********** form ***********/
+/*********** row ***********/
+/*********** col ***********/
+/*********** image ***********/
+/*********** preview ***********/
+/*********** textarea ***********/
+/*********** search ***********/
+/*********** password ***********/
+/*********** layout ***********/
+/*********** list ***********/
+/*********** mentions ***********/
+/*********** menu ***********/
+/*********** message ***********/
+/*********** modal ***********/
+/*********** notification ***********/
+/*********** page ***********/
+/*********** pagination ***********/
+/*********** patination ***********/
+/*********** popconfirm ***********/
+/*********** popover ***********/
+/*********** progress ***********/
+/*********** radio ***********/
+/*********** rate ***********/
+/*********** prefixCls ***********/
+/*********** resizeBox ***********/
+/*********** resizebox ***********/
+/*********** result ***********/
+/*********** skeleton ***********/
+/*********** slider ***********/
+/*********** space ***********/
+/*********** spin ***********/
+/*********** statistic ***********/
+/*********** steps ***********/
+/*********** switch ***********/
+/*********** table ***********/
+/*********** tabs ***********/
+/*********** sizes ***********/
+/*********** tag ***********/
+/*********** colors ***********/
+/*********** timeline ***********/
+/*********** tooltip ***********/
+/*********** transfer ***********/
+/*********** tree ***********/
+/*********** trigger ***********/
+/*********** typography ***********/
+/*********** upload ***********/
