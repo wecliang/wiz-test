@@ -2,36 +2,257 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico"
-    /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <title>Wiz UI - 开箱即用的中台前端/设计解决方案</title> -->
-    <script crossorigin src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
-    <!-- <script crossorigin src="https://cdn.bootcdn.net/ajax/libs/react/17.0.2/umd/react.development.js"></script>
-    <script crossorigin src="https://cdn.bootcdn.net/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script> -->
+    <!-- <script crossorigin src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script> -->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script> -->
+    <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-router-dom@5.3.4/umd/react-router-dom.min.js"></script>
     <script crossorigin src="https://unpkg.com/lodash@4.17.21/lodash.min.js"></script>
     <script crossorigin src="https://unpkg.com/mobx@5.15.7/lib/mobx.umd.min.js"></script>
     <script crossorigin src="https://unpkg.com/mobx-react-lite@2.2.2/dist/mobxreactlite.umd.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/mobx-react@6.2.2/dist/mobxreact.umd.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/dayjs@1.11.9/dayjs.min.js"></script>
     <script crossorigin src="https://unpkg.com/i18next@23.5.1/i18next.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dnd@14.0.5/dist/umd/ReactDnD.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dnd-html5-backend@14.0.2/dist/umd/ReactDnDHTML5Backend.min.js"></script>
-    <!-- arco -->
     <link href="https://unpkg.com/@arco-design/web-react@2.55.0/dist/css/arco.min.css"  rel="stylesheet" />
     <script crossorigin src="https://unpkg.com/@arco-design/web-react@2.55.0/dist/arco.min.js"></script>
     <script crossorigin src="https://unpkg.com/@arco-design/web-react@2.55.0/dist/arco-icon.min.js"></script>
-    <!-- monaco -->
-    <!-- <script crossorigin src="https://static-s.gaiaworkforce.com/formPlatForm/umdjs/monaco/index.min.js"></script> -->
-    <script type="module" crossorigin src="./assets/index.2e39aa0a.js"></script>
-    <link rel="modulepreload" href="./assets/vendor.1045acf8.js">
-    <link rel="stylesheet" href="./assets/index.b4b56f08.css">
+    <script src="https://cdn.tailwindcss.com/3.4.3"></script>
+
+    <script crossorigin src="https://wizui-assets.oss-cn-hangzhou.aliyuncs.com/umd/react-converter-code.umd.js"></script>
+    <script>
+        // 这是arco 提供
+        const arcos = {
+            red: {
+                50: 'rgb(var(--red-1))',
+                100: 'rgb(var(--red-2))',
+                200: 'rgb(var(--red-3))',
+                300: 'rgb(var(--red-4))',
+                400: 'rgb(var(--red-5))',
+                500: 'rgb(var(--red-6))',
+                600: 'rgb(var(--red-7))',
+                700: 'rgb(var(--red-8))',
+                800: 'rgb(var(--red-9))',
+                900: 'rgb(var(--red-10))',
+            },
+            // orangered: {
+            //     50: 'rgb(var(--orangered-1))',
+            //     100: 'rgb(var(--orangered-2))',
+            //     200: 'rgb(var(--orangered-3))',
+            //     300: 'rgb(var(--orangered-4))',
+            //     400: 'rgb(var(--orangered-5))',
+            //     500: 'rgb(var(--orangered-6))',
+            //     600: 'rgb(var(--orangered-7))',
+            //     700: 'rgb(var(--orangered-8))',
+            //     800: 'rgb(var(--orangered-9))',
+            //     900: 'rgb(var(--orangered-10))',
+            // },
+            orange: {
+                50: 'rgb(var(--orange-1))',
+                100: 'rgb(var(--orange-2))',
+                200: 'rgb(var(--orange-3))',
+                300: 'rgb(var(--orange-4))',
+                400: 'rgb(var(--orange-5))',
+                500: 'rgb(var(--orange-6))',
+                600: 'rgb(var(--orange-7))',
+                700: 'rgb(var(--orange-8))',
+                800: 'rgb(var(--orange-9))',
+                900: 'rgb(var(--orange-10))',
+            },
+            gold: {
+                50: 'rgb(var(--gold-1))',
+                100: 'rgb(var(--gold-2))',
+                200: 'rgb(var(--gold-3))',
+                300: 'rgb(var(--gold-4))',
+                400: 'rgb(var(--gold-5))',
+                500: 'rgb(var(--gold-6))',
+                600: 'rgb(var(--gold-7))',
+                700: 'rgb(var(--gold-8))',
+                800: 'rgb(var(--gold-9))',
+                900: 'rgb(var(--gold-10))',
+            },
+            yellow: {
+                50: 'rgb(var(--yellow-1))',
+                100: 'rgb(var(--yellow-2))',
+                200: 'rgb(var(--yellow-3))',
+                300: 'rgb(var(--yellow-4))',
+                400: 'rgb(var(--yellow-5))',
+                500: 'rgb(var(--yellow-6))',
+                600: 'rgb(var(--yellow-7))',
+                700: 'rgb(var(--yellow-8))',
+                800: 'rgb(var(--yellow-9))',
+                900: 'rgb(var(--yellow-10))',
+            },
+            lime: {
+                50: 'rgb(var(--lime-1))',
+                100: 'rgb(var(--lime-2))',
+                200: 'rgb(var(--lime-3))',
+                300: 'rgb(var(--lime-4))',
+                400: 'rgb(var(--lime-5))',
+                500: 'rgb(var(--lime-6))',
+                600: 'rgb(var(--lime-7))',
+                700: 'rgb(var(--lime-8))',
+                800: 'rgb(var(--lime-9))',
+                900: 'rgb(var(--lime-10))',
+            },
+            green: {
+                50: 'rgb(var(--green-1))',
+                100: 'rgb(var(--green-2))',
+                200: 'rgb(var(--green-3))',
+                300: 'rgb(var(--green-4))',
+                400: 'rgb(var(--green-5))',
+                500: 'rgb(var(--green-6))',
+                600: 'rgb(var(--green-7))',
+                700: 'rgb(var(--green-8))',
+                800: 'rgb(var(--green-9))',
+                900: 'rgb(var(--green-10))',
+            },
+            cyan: {
+                50: 'rgb(var(--cyan-1))',
+                100: 'rgb(var(--cyan-2))',
+                200: 'rgb(var(--cyan-3))',
+                300: 'rgb(var(--cyan-4))',
+                400: 'rgb(var(--cyan-5))',
+                500: 'rgb(var(--cyan-6))',
+                600: 'rgb(var(--cyan-7))',
+                700: 'rgb(var(--cyan-8))',
+                800: 'rgb(var(--cyan-9))',
+                900: 'rgb(var(--cyan-10))',
+            },
+            blue: {
+                50: 'rgb(var(--blue-1))',
+                100: 'rgb(var(--blue-2))',
+                200: 'rgb(var(--blue-3))',
+                300: 'rgb(var(--blue-4))',
+                400: 'rgb(var(--blue-5))',
+                500: 'rgb(var(--blue-6))',
+                600: 'rgb(var(--blue-7))',
+                700: 'rgb(var(--blue-8))',
+                800: 'rgb(var(--blue9))',
+                900: 'rgb(var(--blue-10))',
+            },
+            arcoblue: {
+                50: 'rgb(var(--arcoblue-1))',
+                100: 'rgb(var(--arcoblue-2))',
+                200: 'rgb(var(--arcoblue-3))',
+                300: 'rgb(var(--arcoblue-4))',
+                400: 'rgb(var(--arcoblue-5))',
+                500: 'rgb(var(--arcoblue-6))',
+                600: 'rgb(var(--arcoblue-7))',
+                700: 'rgb(var(--arcoblue-8))',
+                800: 'rgb(var(--arcoblue-9))',
+                900: 'rgb(var(--arcoblue-10))',
+            },
+            purple: {
+                50: 'rgb(var(--purple-1))',
+                100: 'rgb(var(--purple-2))',
+                200: 'rgb(var(--purple-3))',
+                300: 'rgb(var(--purple-4))',
+                400: 'rgb(var(--purple-5))',
+                500: 'rgb(var(--purple-6))',
+                600: 'rgb(var(--purple-7))',
+                700: 'rgb(var(--purple-8))',
+                800: 'rgb(var(--purple-9))',
+                900: 'rgb(var(--purple-10))',
+            },
+            pinkpurple: {
+                50: 'rgb(var(--pinkpurple-1))',
+                100: 'rgb(var(--pinkpurple-2))',
+                200: 'rgb(var(--pinkpurple-3))',
+                300: 'rgb(var(--pinkpurple-4))',
+                400: 'rgb(var(--pinkpurple-5))',
+                500: 'rgb(var(--pinkpurple-6))',
+                600: 'rgb(var(--pinkpurple-7))',
+                700: 'rgb(var(--pinkpurple-8))',
+                800: 'rgb(var(--pinkpurple-9))',
+                900: 'rgb(var(--pinkpurple-10))',
+            },
+            magenta: {
+                50: 'rgb(var(--magenta-1))',
+                100: 'rgb(var(--magenta-2))',
+                200: 'rgb(var(--magenta-3))',
+                300: 'rgb(var(--magenta-4))',
+                400: 'rgb(var(--magenta-5))',
+                500: 'rgb(var(--magenta-6))',
+                600: 'rgb(var(--magenta-7))',
+                700: 'rgb(var(--magenta-8))',
+                800: 'rgb(var(--magenta-9))',
+                900: 'rgb(var(--magenta-10))',
+            },
+            gray: {
+                50: 'rgb(var(--gray-1))',
+                100: 'rgb(var(--gray-2))',
+                200: 'rgb(var(--gray-3))',
+                300: 'rgb(var(--gray-4))',
+                400: 'rgb(var(--gray-5))',
+                500: 'rgb(var(--gray-6))',
+                600: 'rgb(var(--gray-7))',
+                700: 'rgb(var(--gray-8))',
+                800: 'rgb(var(--gray-9))',
+                900: 'rgb(var(--gray-10))',
+            },
+        }
+      
+        tailwind.config = {
+            darkMode: 'selector',
+            theme: {
+            colors: {
+                white: 'rgb(var(--gray-1))',
+                black: 'rgb(var(--gray-10))',
+                // 这是真实使用
+                // Slate：一组灰色调的色彩。
+                // Gray：另一组灰色调的色彩。
+                // Zinc：一组淡灰色调的色彩。
+                // Neutral：中性色调的色彩，比如灰色。
+                // Stone：一组深灰色调的色彩。
+                // Red：一组红色调的色彩。
+                // Orange：一组橙色调的色彩。
+                // Amber：一组琥珀色调的色彩。
+                // Yellow：一组黄色调的色彩。
+                // Lime：一组柠檬黄色调的色彩。
+                // Green：一组绿色调的色彩。
+                // Emerald：一组翠绿色调的色彩。
+                // Teal：一组青绿色调的色彩。
+                // Cyan：一组青色调的色彩。
+                // Sky：一组天蓝色调的色彩。
+                // Blue：一组蓝色调的色彩。
+                // Indigo：一组靛青色调的色彩。
+                // Violet：一组紫罗兰色调的色彩。
+                // Purple：一组紫色调的色彩。 
+                // Fuchsia：一组紫红色调的色彩。
+                // Pink：一组粉红色调的色彩。
+                // Rose：一组玫瑰色调的色彩。
+                slate: arcos.gray,
+                gray: arcos.gray,
+                zinc: arcos.gray,
+                neutral: arcos.gray,
+                stone: arcos.gray,
+                red: arcos.red,
+                orange: arcos.orange,
+                amber: arcos.gold,
+                yellow: arcos.yellow,
+                lime: arcos.lime,
+                green: arcos.green,
+                emerald: arcos.green,
+                teal: arcos.cyan,
+                cyan: arcos.cyan,
+                sky: arcos.blue,
+                blue: arcos.arcoblue,
+                indigo: arcos.arcoblue,
+                violet: arcos.Purple,
+                purple: arcos.purple,
+                fuchsia: arcos.pinkpurple,
+                pink: arcos.pinkpurple,
+                rose: arcos.Magenta,
+            }
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index.35c3af64.js"></script>
+    <link rel="modulepreload" href="./assets/vendor.bb8d15b1.js">
+    <link rel="stylesheet" href="./assets/index.60259e36.css">
   </head>
   <body>
     <div id="root"></div>
@@ -44,5 +265,6 @@
       };
     </script>
     
+    <!-- <script type="module" src="/src/build.tsx"></script> -->
   </body>
 </html>
