@@ -1,1 +1,0 @@
-import{j as o}from"./index.515d0c6f.js";import"./vendor.143e4d5c.js";const t=window.arco.Button,n=window.arco.Card,r=window.arco.Space,e=()=>o("div",{children:o(n,{title:"\u767B\u9646\u9875\u8BBE\u7F6E",extra:o(r,{children:o(t,{children:"\u4FDD\u5B58"})})})});export{e as default};

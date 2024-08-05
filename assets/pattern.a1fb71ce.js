@@ -1,0 +1,1 @@
+var p;(function(a){a.version="^[0-9]+.[0-9]+.[0-9]+$",a.namespace="^[0-9a-zA-Z_-]+$",a.varName="^[a-z][0-9a-z_]+$",a.componentName="^[A-Z][A-Za-z0-9]*$/g",a.path="^[a-z][a-z0-9-/]+$",a.phone="^[0-9]{11}$",a.email="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$",a.iamgeFileName=".(ico|jpg|jpeg|png|gif|bmp|svg|webp|tiff|tif)$"})(p||(p={}));export{p as P};
