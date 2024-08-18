@@ -1,0 +1,1 @@
+import{q as e}from"./login.72294c15.js";import{d as t}from"./app.2a0cc6df.js";function i(){const a=e.parseUrl(t?"":window.location.href).query,s={};return Object.keys(a).forEach(r=>{a[r]==="true"&&(s[r]=!0),a[r]==="false"&&(s[r]=!1)}),s}export{i as g};

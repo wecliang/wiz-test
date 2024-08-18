@@ -1,0 +1,1 @@
+import{F as o}from"./index.34a87a9f.js";import{j as r}from"./index.b68b1088.js";import"./app.2a0cc6df.js";import"./pattern.a1fb71ce.js";import"./vendor.179e3476.js";const e=window.arco.Card,a=window.arco.Image,c=()=>r(e,{bodyStyle:{padding:0},children:r(a.PreviewGroup,{children:r(o,{onClick:()=>{}})})});export{c as default};
